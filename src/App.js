@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
+import Welcome from './Welcome.js';
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       names: ["Juan", "Pedro", "Germán"]
     }
   }
-  Welcome = (props) => {
-    return <h1>Hola {props.name}</h1>;
-  };
-  render() {
+  
+  render() {    
     return (
       <div>
         {this.state.names.map((name) =>
