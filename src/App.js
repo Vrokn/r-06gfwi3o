@@ -9,7 +9,7 @@ class App extends Component {
       names: ["Juan", "Pedro", "Germán"]
     }
   }
-  const Welcome = (props) => {
+  Welcome = (props) => {
     return <h1>Hola {props.name}</h1>;
   };
   render() {
